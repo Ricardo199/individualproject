@@ -1,0 +1,84 @@
+.gallery2 {
+    margin-top: 100vh;
+    width: 60vh;
+    display: grid;    
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.gallery2 .img-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.gallery2 .img-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 1px;
+    object-fit: cover;
+}
+
+.gallery2 .img-container .overlay {
+    position: absolute;
+    background-color: rgba(173, 216, 230, 0.7);
+    border: gray;
+    margin-top: 21.5vh;
+    width: 15vh;
+    font-size: 0.9em;
+}
+
+.desc2{
+    width: 40%;
+    margin-left: 108vh;
+    margin-top: -32.5%;
+    background-color: #ADD8E6;
+    border-radius: 1%;
+    padding: 1%;
+}
+
+.desc3{
+    width: 40%;
+    margin-left: 108vh;
+    margin-top: -33%;
+    background-color: #ADD8E6;
+    border-radius: 1%;
+    padding: 1%;
+}
+
+.form{
+    position: absolute;
+    top: 29.5%;
+    left: 29.5%;
+    color: white;
+    margin: auto;
+    margin-top: auto;
+    width: 40%;
+    background-color:#ADD8E6;
+    border-radius: 1%;
+    padding: 1%;
+}
+
+.form .space{
+    width: 100%;
+}
+
+.form .btn{
+    background-color: #ADD8E6;
+    box-shadow: none;
+    outline: none;
+    border-radius: 25%;
+}
+
+.sitemap{
+    size: 50%;
+    margin-left: 34.6%;
+    margin-top: 5%;
+    background-color: #ADD8E6;
+    width: fit-content;
+    padding: 1%;
+    border-radius: 1%;
+}

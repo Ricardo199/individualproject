@@ -1,0 +1,292 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.all{
+    width: 80%;
+    margin:0 auto;
+    display: block;
+}
+
+.info {
+    margin-left: 28.7%;
+    margin-top: -40%;
+}
+
+.icon{
+    width: 2%;
+    height: 2%;
+    margin-right: 1%;
+}
+
+.hr1 {
+    margin-top: -0.4%;
+    border: none;
+    height: 6vh;
+    color: white;
+    background-color: #ADD8E6;
+    margin-bottom: -4vh;
+    z-index: 0;
+  }
+
+.desc{
+    width: 40%;
+    margin-left: 108vh;
+    margin-top: -34%;
+    background-color: #ADD8E6;
+    border-radius: 1%;
+    padding: 1%;
+}
+
+.listtit{
+    margin-top: -2.5%;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.listsubtit{
+    font-size: 2.125rem;
+    font-weight: bold;
+    color: white;
+}
+
+.descript{
+    margin-top: 1vh;
+    font-size: 1.5em;
+    color: white;
+}
+
+.desc .icomo{
+    color: white;
+}
+
+.inline .icomo{
+    color: white;
+}
+
+.name{
+    margin-left: 1%;
+    color: white;
+    margin-top: -1vh;
+    z-index: 1;
+}
+
+.name a:active{
+    color: white;
+}
+
+.name a:visited{
+    color: white;
+}
+
+.portrait {
+    margin-top: -11vh;
+}
+
+.gallery {
+    background-color: #ADD8E6;
+    margin-left: 25%;
+    display: grid;    
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 1%;
+}
+
+.gallery .img-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    border-radius: 1%;
+}
+
+.gallery .img-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 1px;
+    object-fit: cover;
+    border-radius: 1%;
+}
+
+.gallery .img-container .overlay {
+    position: absolute;
+    background-color: rgba(173, 216, 230, 0.7);
+    border: gray;
+    margin-top: 21.5vh;
+    width: 15vh;
+    font-size: 0.9em;
+}
+
+.img-container a:active{
+    color: white;
+}
+
+.img-container a:visited{
+    color: white;
+}
+
+.info{
+    padding: 0.4%;
+    margin-top: -71vh;
+    margin-left: 60vh;
+    color: white;
+    background-color: #ADD8E6;
+    border-radius: 1%;
+    text-decoration: none;
+}
+
+a:link{
+    text-decoration: none;
+    color:white;
+    font-size: large;
+}
+
+.broker{
+    margin-top: -2vh;
+    margin-left: 60vh;
+    color: #ADD8E6;
+}
+
+* {
+    margin-left: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    text-align: center;
+    color: #ADD8E6;
+    font-size: 2.125rem;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+
+.page{
+    color: white;
+}
+
+body {
+    /* background is white by default but added for clarity */
+    background: white;
+    width: 100%;
+}
+
+.hamburger,
+.close {
+    border: none;
+    cursor: pointer;
+    /* position absolute position the icons relative to the body because they have no position relative parents*/
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+}
+
+.hamburger {
+    background: #ADD8E6;
+    color: white;
+    text-decoration: none;
+}
+
+.close {
+    background: #ADD8E6;
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger img,
+.close img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    position: absolute;
+    /* a higher z-index put navbar above hamburger */
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 11vh;
+    overflow: hidden;
+    /* basic menu styling*/
+    list-style: none;
+    background: #ADD8E6;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* animate slide up/down */
+    transform: translateY(-120%);
+    transition: transform 0.2s ease;
+}
+
+/* :target is called when its anchor id #navbar is called by clicking on the hamburger which has href="#navbar" */
+
+.navbar:target {
+    /* show navbar */
+    transform: translateY(0);
+}
+
+li a {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* remove default underline and add our own with padding and border bottom */
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5rem;
+}
+
+li a:hover,
+li a:focus {
+    /* show border bottom */
+    border-bottom: 1px solid white;
+}
+
+/* hamburger menu courtesy of https://dev.to/ljcdev/hamburger-css-no-js-2dfa*/
+
+.listings {
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 2rem;
+}
+
+.page{
+    width: 50%;
+    height: 50%;
+    margin-left: 1vh;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ADD8E6;
+    color: white;
+    padding-left: 1vh;
+    line-height: 30px;
+}
+
+.inline{
+    display: inline-block;
+}
+
+.inline div{
+    display: inline-block;
+}
+
+.price{
+    margin-top:1%;
+    color: white;
+}
+
+hr{
+    color: white;
+}
